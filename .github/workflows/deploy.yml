@@ -22,6 +22,6 @@ jobs:
         uses: google-github-actions/deploy-cloudrun@v2
         with:
           service: 'spring-boot-open-api-mongodb'
-          image: 'douglasjohnson/tictactoe:master'
+          image: 'douglasjohnson/spring-boot-open-api-mongodb'
       - name: Use output
         run: 'curl "${{ steps.deploy.outputs.url }}"'
