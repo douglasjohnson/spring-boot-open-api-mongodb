@@ -1,9 +1,9 @@
 name: Deploy
 
-on: [push]
-#  workflow_run:
-#    workflows: [Docker Publish]
-#    types: [completed]
+on:
+  workflow_run:
+    workflows: [Docker Publish]
+    types: [completed]
 
 permissions:
   contents: 'read'
