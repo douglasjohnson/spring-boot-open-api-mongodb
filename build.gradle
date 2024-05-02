@@ -74,7 +74,7 @@ tasks.named('test') {
 }
 
 tasks.named('bootBuildImage') {
-    imageName.set('${DOCKERHUB_USERNAME}/${rootProject.name}')
+    imageName.set('${DOCKERHUB_USERNAME/$rootProject.name')
     docker {
         publishRegistry {
             username = '${DOCKERHUB_USERNAME}'
